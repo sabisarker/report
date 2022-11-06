@@ -6,7 +6,7 @@ class Report(models.Model):
     name = models.CharField(max_length=120)
     image = models.ImageField(upload_to='reports', blank=True)
     remarks = models.TextField()
-    author = models.ForeignKey()
+    author = models.ForeignKey(Profile, on_delete=models.CASCADE)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
