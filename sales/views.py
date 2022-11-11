@@ -13,6 +13,11 @@ def home_view(request):
         chart_type = request.POST.get('chart_type')
         print(date_from, date_to, chart_type)
 
+        qs = Sale.objects.filter(created__date=date_from)
+        '''obj = Sale.objects.get(id=1)'''
+        print(qs)
+        '''print(obj)'''
+    
     context = {
         'form':form,
     }
