@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-%&-qn#z4ux^rmo1hwgjs_-tfn0+l@fr-tts&di(bqrt%m^t2wd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [agridata.pythonanywhere.com] #added by me for allowing in python anywhere.com
+ALLOWED_HOSTS = ['agridata.pythonanywhere.com'] #added by me for allowing in python anywhere.com
 
 
 # Application definition
